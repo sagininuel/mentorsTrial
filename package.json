@@ -1,27 +1,48 @@
 {
-  "name": "mentorstrial",
-  "version": "1.0.0",
-  "description": "A trial project",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sagininuel/mentorsTrial.git"
-  },
-  "keywords": [
-    "mentors",
-    "trial"
-  ],
-  "author": "Sagini Emmanuel",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sagininuel/mentorsTrial/issues"
-  },
-  "homepage": "https://github.com/sagininuel/mentorsTrial#readme",
-  "dependencies": {
-    "babel-cli": "^6.26.0",
-    "express": "^4.17.1"
-  }
+    "name": "mentorstrial",
+    "version": "1.0.0",
+    "description": "A trial project",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --exec babel-node ./src/index.js",
+        "test": "mocha ./api/test --recursive --require babel-register"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sagininuel/mentorsTrial.git"
+    },
+    "keywords": [
+        "mentors",
+        "trial"
+    ],
+    "author": "Sagini Emmanuel",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/sagininuel/mentorsTrial/issues"
+    },
+    "homepage": "https://github.com/sagininuel/mentorsTrial#readme",
+    "dependencies": {
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.3",
+        "babel-node": "0.0.1-security",
+        "babel-preset-env": "^1.7.0",
+        "babel-register": "^6.26.0",
+        "chai": "^4.2.0",
+        "chai-http": "^4.3.0",
+        "eslint": "^6.1.0",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-config-prettier": "^6.1.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-prettier": "^3.1.0",
+        "eslint-plugin-react": "^7.14.3",
+        "eslint-plugin-react-hooks": "^1.7.0",
+        "mocha": "^6.2.0",
+        "nodemon": "^1.19.1",
+        "prettier": "^1.18.2"
+    }
 }
